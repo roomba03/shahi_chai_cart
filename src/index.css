@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@400;500&display=swap");
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #faf1e4;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: "Berkshire Swash", serif;
+}
+
+/* a slow gold sheen sweeping across the headline, gated to a pause at
+   each end so it reads as an occasional glint rather than a constant loop */
+@keyframes sheen-sweep {
+  0%,
+  45% {
+    background-position: 160% 0;
+  }
+  100% {
+    background-position: -60% 0;
+  }
+}
+
+.sheen-text {
+  background-image: linear-gradient(115deg, #6d1b34 40%, #f3dca8 50%, #6d1b34 60%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: sheen-sweep 5s ease-in-out infinite;
+}
+
+::selection {
+  background: #6d1b34;
+  color: #faf1e4;
+}
