@@ -11,7 +11,7 @@ export default function MainContent() {
     >
       <BackgroundGlow />
       <motion.h1
-        className="font-display sheen-text text-5xl sm:text-6xl md:text-7xl drop-shadow-[0_4px_6px_rgba(58,46,20,0.3)]"
+        className="font-display sheen-text text-5xl sm:text-6xl md:text-7xl text-center drop-shadow-[0_4px_6px_rgba(58,46,20,0.3)]"
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}

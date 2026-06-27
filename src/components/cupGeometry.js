@@ -9,7 +9,7 @@ export const LIQUID_RX = RIM.rx - 7
 export const LIQUID_RY = RIM.ry - 2.5
 
 export const CUP_BOX_CLASS = 'w-[128px] h-[96px] sm:w-[144px] sm:h-[108px]'
-export const CUP_TOP_CLASS = 'top-[161px] sm:top-[221px]'
+export const CUP_TOP_CLASS = 'top-[38vh]'
 
 // the rim ring is split into a back half (the far side, behind the stream
 // so the pour visibly covers it) and a front half (the near lip, in front
