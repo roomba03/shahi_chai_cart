@@ -18,7 +18,7 @@ const STREAM_HIGHLIGHT_2 = 'M21,10 C19,50 22,92 23,134 C23,170 17,205 16,232'
 export default function PourStream({ pouring, onReachedCup }) {
   return (
     <motion.div
-      className="absolute left-1/2 -translate-x-1/2 top-0 w-8 h-[calc(35.4vh+37px)] sm:h-[calc(35.4vh+42px)]"
+      className="absolute left-1/2 -translate-x-1/2 top-0 w-8 h-[calc(46.5vh_-_7px)] sm:h-[calc(46.5vh_-_8px)]"
       style={{ transformOrigin: pouring ? 'top' : 'bottom' }}
       initial={{ scaleY: 0, opacity: 0 }}
       animate={pouring ? { scaleY: 1, opacity: 1 } : { scaleY: 0, opacity: 1 }}
